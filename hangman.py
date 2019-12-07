@@ -210,11 +210,12 @@ def show_possible_matches(my_word):
 def hangman_with_hints(secret_word):
     print("Welcome to the game Hangman!")
     print("Here Are Rules For Your Game") 
+    print()
+    print("press enter to view next line")
     n=len(secret_word)
     for i in range(1,len(rules)):
-        print(rules[i]) 
-        print("*press any key()")
-        step=input()  
+        input()
+        print(rules[i])
     print("I am thinking of a word that is {} letters long.".format(n))
     print("_ "*n)
     guesses=6
